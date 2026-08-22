@@ -1,0 +1,12 @@
+
+    
+    
+    ;
+    -- dbt seed --
+    
+            insert overwrite into DBT_LOGISTICS.PUBLIC_SEEDS.DIM_CARBON_TAX_RATES (COUNTRY_CD_2CHAR, COUNTRY_CD_3CHAR, COUNTRY_NAME, BASE_POINT, CARBON_TAX_PER_T_CO2) values
+            (%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s)
+        
+
+;
+  

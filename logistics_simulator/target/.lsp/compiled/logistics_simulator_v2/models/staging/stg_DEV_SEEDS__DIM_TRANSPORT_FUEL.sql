@@ -1,0 +1,16 @@
+with source as (
+        select * from DBT_LOGISTICS.DEV_SEEDS.DIM_TRANSPORT_FUEL
+  ),
+  renamed as (
+      select
+          "TRANSPORT_MODE",
+        "VEHICLE_TYPE",
+        "AIR_DISTANCE",
+        "SEA_SIZE",
+        "SEA_FUEL_TYPE",
+        "FUEL_L_T_KM"
+
+      from source
+  )
+  select * from renamed
+    
