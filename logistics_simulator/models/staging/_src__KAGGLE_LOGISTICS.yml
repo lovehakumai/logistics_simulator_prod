@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: DEV_SEEDS
+    tables:
+      - name: CO2_EMISSION
+      - name: DIM_TRANSPORT_FUEL
+      - name: FCT_FUEL_PRICES
+      - name: MAIN_PORTS
+      - name: DIM_CARBON_TAX_RATES
+  - name: RAW
+    tables:
+      - name: GLOBAL_SUPPLY_CHAIN_RISK_2024_2026

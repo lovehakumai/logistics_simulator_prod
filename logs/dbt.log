@@ -1,0 +1,5 @@
+==================== 2026-07-08T06:44:48.376088Z | 019f4078-d476-7001-9598-22f71c83ac52 ====================
+06:44:48.376495 [warn ]: [DocsGenerateWarning (dbt1705)]: `dbt docs generate` is not supported. Use `dbt compile --write-catalog` to write catalog.json. To host docs locally, use the dbt Core index.html with catalog.json and manifest.json in the same directory: https://github.com/dbt-labs/dbt-core/blob/main/core/dbt/task/docs/index.html
+06:44:49.053635 [info ]: 
+==================== Execution Summary =====================
+Finished 'docs' with 1 warning [677ms]

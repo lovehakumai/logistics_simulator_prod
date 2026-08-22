@@ -1,0 +1,124 @@
+TRANSPORT_MODE,VEHICLE_TYPE,AIR_DISTANCE,SEA_SIZE,SEA_FUEL_TYPE,FUEL_L_T_KM
+AIR,Freighter,< 1500km,,,0.4738
+AIR,Freighter,>= 1500km,,,0.1976
+AIR,Belly Freight,< 1500km,,,0.3881
+AIR,Belly Freight,>= 1500km,,,0.3048
+RAIL,Container,,,,0.008
+RAIL,Cars,,,,0.019
+RAIL,Chemicals,,,,0.0075
+RAIL,Coal & Steel,,,,0.0058
+RAIL,Building Materials,,,,0.0073
+RAIL,Manufactured Products,,,,0.0087
+RAIL,Cereals,,,,0.0057
+RAIL,Truck + trailer on train,,,,0.0179
+RAIL,Trailer only on train,,,,0.0119
+SEA,Chemical tanker,,0-4999,HFO,0.0125
+SEA,Chemical tanker,,0-4999,VLSFO,0.01264
+SEA,Chemical tanker,,0-4999,MDO,0.01341
+SEA,Chemical tanker,,5000-9999,HFO,0.0085
+SEA,Chemical tanker,,5000-9999,VLSFO,0.00859
+SEA,Chemical tanker,,5000-9999,MDO,0.00912
+SEA,Chemical tanker,,10000-19999,HFO,0.0055
+SEA,Chemical tanker,,10000-19999,VLSFO,0.00556
+SEA,Chemical tanker,,10000-19999,MDO,0.0059
+SEA,Chemical tanker,,20000-39999,HFO,0.0035
+SEA,Chemical tanker,,20000-39999,VLSFO,0.00354
+SEA,Chemical tanker,,20000-39999,MDO,0.00376
+SEA,Chemical tanker,,40000-+,HFO,0.0022
+SEA,Chemical tanker,,40000-+,VLSFO,0.00222
+SEA,Chemical tanker,,40000-+,MDO,0.00236
+SEA,General cargo,,0-4999,HFO,0.015
+SEA,General cargo,,0-4999,VLSFO,0.01516
+SEA,General cargo,,0-4999,MDO,0.01609
+SEA,General cargo,,5000-9999,HFO,0.01
+SEA,General cargo,,5000-9999,VLSFO,0.01011
+SEA,General cargo,,5000-9999,MDO,0.01073
+SEA,General cargo,,10000-19999,HFO,0.007
+SEA,General cargo,,10000-19999,VLSFO,0.00708
+SEA,General cargo,,10000-19999,MDO,0.00751
+SEA,General cargo,,20000-+,HFO,0.0045
+SEA,General cargo,,20000-+,VLSFO,0.00455
+SEA,General cargo,,20000-+,MDO,0.00483
+SEA,Liquefied gas tanker,,0-4999,HFO,0.018
+SEA,Liquefied gas tanker,,0-4999,VLSFO,0.0182
+SEA,Liquefied gas tanker,,0-4999,MDO,0.01931
+SEA,Liquefied gas tanker,,5000-9999,HFO,0.012
+SEA,Liquefied gas tanker,,5000-9999,VLSFO,0.01213
+SEA,Liquefied gas tanker,,5000-9999,MDO,0.01288
+SEA,Liquefied gas tanker,,10000-19999,HFO,0.008
+SEA,Liquefied gas tanker,,10000-19999,VLSFO,0.00809
+SEA,Liquefied gas tanker,,10000-19999,MDO,0.00858
+SEA,Liquefied gas tanker,,20000-+,HFO,0.0042
+SEA,Liquefied gas tanker,,20000-+,VLSFO,0.00425
+SEA,Liquefied gas tanker,,20000-+,MDO,0.00451
+SEA,Oil tanker,,0-4999,HFO,0.011
+SEA,Oil tanker,,0-4999,VLSFO,0.01112
+SEA,Oil tanker,,0-4999,MDO,0.0118
+SEA,Oil tanker,,5000-9999,HFO,0.0075
+SEA,Oil tanker,,5000-9999,VLSFO,0.00758
+SEA,Oil tanker,,5000-9999,MDO,0.00805
+SEA,Oil tanker,,10000-19999,HFO,0.0048
+SEA,Oil tanker,,10000-19999,VLSFO,0.00485
+SEA,Oil tanker,,10000-19999,MDO,0.00515
+SEA,Oil tanker,,20000-59999,HFO,0.003
+SEA,Oil tanker,,20000-59999,VLSFO,0.00303
+SEA,Oil tanker,,20000-59999,MDO,0.00322
+SEA,Oil tanker,,60000-79999,HFO,0.002
+SEA,Oil tanker,,60000-79999,VLSFO,0.00202
+SEA,Oil tanker,,60000-79999,MDO,0.00215
+SEA,Oil tanker,,80000-119999,HFO,0.0014
+SEA,Oil tanker,,80000-119999,VLSFO,0.00142
+SEA,Oil tanker,,80000-119999,MDO,0.0015
+SEA,Oil tanker,,120000-199999,HFO,0.001
+SEA,Oil tanker,,120000-199999,VLSFO,0.00101
+SEA,Oil tanker,,120000-199999,MDO,0.00107
+SEA,Oil tanker,,200000-+,HFO,0.0006
+SEA,Oil tanker,,200000-+,VLSFO,0.00061
+SEA,Oil tanker,,200000-+,MDO,0.00064
+SEA,Other liquids tankers,,0-999,HFO,0.0195
+SEA,Other liquids tankers,,0-999,VLSFO,0.01971
+SEA,Other liquids tankers,,0-999,MDO,0.02092
+SEA,Other liquids tankers,,1000-+,HFO,0.0062
+SEA,Other liquids tankers,,1000-+,VLSFO,0.00627
+SEA,Other liquids tankers,,1000-+,MDO,0.00665
+SEA,Other liquids tankers,,0-1999,HFO,0.0165
+SEA,Other liquids tankers,,0-1999,VLSFO,0.01668
+SEA,Other liquids tankers,,0-1999,MDO,0.0177
+SEA,Other liquids tankers,,2000-4999,HFO,0.0122
+SEA,Other liquids tankers,,2000-4999,VLSFO,0.01233
+SEA,Other liquids tankers,,2000-4999,MDO,0.01309
+SEA,Other liquids tankers,,5000-9999,HFO,0.0082
+SEA,Other liquids tankers,,5000-9999,VLSFO,0.00829
+SEA,Other liquids tankers,,5000-9999,MDO,0.0088
+SEA,Other liquids tankers,,10000-19999,HFO,0.0052
+SEA,Other liquids tankers,,10000-19999,VLSFO,0.00526
+SEA,Other liquids tankers,,10000-19999,MDO,0.00558
+SEA,Other liquids tankers,,20000-+,HFO,0.0032
+SEA,Other liquids tankers,,20000-+,VLSFO,0.00324
+SEA,Other liquids tankers,,20000-+,MDO,0.00343
+SEA,Refrigerated bulk,,0-1999,HFO,0.024
+SEA,Refrigerated bulk,,0-1999,VLSFO,0.02426
+SEA,Refrigerated bulk,,0-1999,MDO,0.02575
+SEA,Refrigerated bulk,,2000-5999,HFO,0.017
+SEA,Refrigerated bulk,,2000-5999,VLSFO,0.01719
+SEA,Refrigerated bulk,,2000-5999,MDO,0.01824
+SEA,Refrigerated bulk,,6000-9999,HFO,0.0115
+SEA,Refrigerated bulk,,6000-9999,VLSFO,0.01163
+SEA,Refrigerated bulk,,6000-9999,MDO,0.01234
+SEA,Refrigerated bulk,,10000-+,HFO,0.0072
+SEA,Refrigerated bulk,,10000-+,VLSFO,0.00728
+SEA,Refrigerated bulk,,10000-+,MDO,0.00773
+ROAD,Van < 3.5 t GVW,,,Diesel,0.229
+ROAD,Rigid truck 3.5–7.5 t GVW,,,Diesel,0.118
+ROAD,Rigid truck 7.5–12 t GVW,,,Diesel,0.089
+ROAD,Rigid truck 12–20 t GVW,,,Diesel,0.075
+ROAD,Rigid truck 20–26 t GVW,,,Diesel,0.065
+ROAD,Artic truck 34–40 t GVW,,,Diesel,0.029
+ROAD,Artic truck up to 44 t GVW (Average/mixed),,,Diesel,0.024
+ROAD,Artic truck up to 44 t GVW (Heavy load),,,Diesel,0.021
+ROAD,Artic truck up to 44 t GVW (Container),,,Diesel,0.025
+ROAD,Artic truck up to 60 t GVW (Average/mixed),,,Diesel,0.019
+ROAD,Artic truck up to 60 t GVW (Heavy load),,,Diesel,0.016
+ROAD,Artic truck up to 60 t GVW (Container),,,Diesel,0.019
+ROAD,Artic truck up to 72 t GVW (Heavy load),,,Diesel,0.014
+ROAD,Artic truck up to 72 t GVW (Container),,,Diesel,0.016

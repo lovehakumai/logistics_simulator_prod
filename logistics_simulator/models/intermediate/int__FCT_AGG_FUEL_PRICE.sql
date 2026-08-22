@@ -1,0 +1,12 @@
+WITH base AS (
+    SELECT * FROM {{ref('stg_DEV_SEEDS__FCT_FUEL_PRICES')}}
+)
+, latest_3_month AS (
+    SELECT
+        FUEL_TYPE
+        , AVG(FUEL_PRICE_USD_PER_L) AS FUEL_PRICE_USD_PER_L
+    FROM base 
+    WHERE DATE >= DATEADD(MONTH, -3, (SELECT MAX(DATE) FROM base))
+    GROUP BY FUEL_TYPE
+)
+SELECT FUEL_TYPE, FUEL_PRICE_USD_PER_L FROM latest_3_month

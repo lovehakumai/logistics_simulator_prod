@@ -1,0 +1,29 @@
+name: 'logistics_simulator'
+version: '1.0.0'
+
+profile: 'logistics_simulator'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+models:
+  logistics_simulator:
+    staging:
+      +materialized: view
+      +schema: STAGING
+    intermediate:
+      +materialized: view
+      +schema: INTERMEDIATE
+    mart:
+      +materialized: table
+      +schema: ANALYTICS
+seeds:
+  +schema: SEEDS

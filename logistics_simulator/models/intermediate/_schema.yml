@@ -1,0 +1,59 @@
+models:
+  - name: int__FCT_AGG_LOGS
+    columns:
+      - name: ORIGIN_BASE_POINT
+        data_tests:
+          - not_null
+      - name: DESTINATION_BASE_POINT
+        data_tests:
+          - not_null
+      - name: TRANSPORT_MODE
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['AIR', 'SEA', 'RAIL', 'ROAD']
+  - name: int__FCT_LOGS_RAW
+    columns:
+      - name: SHIPMENT_ID
+        data_tests:
+          - not_null
+          - unique
+      - name: DATE
+        data_tests:
+          - not_null
+      - name: ORIGIN_BASE_POINT
+        data_tests:
+          - not_null
+      - name: DESTINATION_BASE_POINT
+        data_tests:
+          - not_null
+      - name: TRANSPORT_MODE
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['AIR', 'SEA', 'RAIL', 'ROAD']
+      - name: PRODUCT_CATEGORY
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: 
+                  - Perishables
+                  - Electronics
+                  - Pharmaceuticals
+                  - Textiles
+                  - Automotive
+      - name: WEATHER_CONDITION 
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: 
+                  - Rain
+                  - Storm
+                  - Fog
+                  - Hurricane
+                  - Clear
+      - name: DISRUPTION_OCCURRED
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [0, 1]

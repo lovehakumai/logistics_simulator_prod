@@ -1,0 +1,234 @@
+models:
+  - name: stg_DEV_SEEDS__MAIN_PORTS
+    columns : 
+      - name: ID
+        data_tests: 
+          - not_null
+          - unique
+      - name: COUNTRY_CD_2CHAR 
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ["AE", "BE", "CN", "DE", "FR", "KR", "NL", "SG", "US"]
+      - name: COUNTRY_CD_3CHAR
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ["ARE", "BEL", "CHN", "DEU", "FRA", "KOR", "NLD", "SGP", "USA"]
+      - name: COUNTRY_NAME
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ["UAE", "BELGIUM", "CHINA", "GERMANY", "FRANCE", "KOREA", "NETHERLANDS", "SINGAPORE", "USA"]
+  - name: stg_DEV_SEEDS__CO2_EMISSION 
+    columns: 
+      - name: TRANSPORT_MODE
+        data_tests:
+          - accepted_values:
+              arguments: 
+                values: ['AIR', 'SEA', 'RAIL', ROAD]
+      - name: VEHICLE_TYPE
+        data_tests: 
+          - accepted_values: 
+              arguments: 
+                values: 
+                  - Truck + trailer on train
+                  - Cars
+                  - Belly Freight
+                  - Cereals
+                  - Artic truck up to 72 t GVW (Heavy load)
+                  - Artic truck up to 44 t GVW (Heavy load)
+                  - Artic truck up to 60 t GVW (Heavy load)
+                  - Building Materials
+                  - Artic truck up to 60 t GVW (Average/mixed)
+                  - Artic truck 34–40 t GVW
+                  - Freighter
+                  - Manufactured Products
+                  - Rigid truck 7.5–12 t GVW
+                  - Coal & Steel
+                  - General cargo
+                  - Rigid truck 20–26 t GVW
+                  - Artic truck up to 44 t GVW (Average/mixed)
+                  - Artic truck up to 72 t GVW (Container)
+                  - Refrigerated bulk
+                  - Container
+                  - Liquefied gas tanker
+                  - Rigid truck 12–20 t GVW
+                  - Oil tanker
+                  - Chemicals
+                  - Trailer only on train
+                  - Chemical tanker
+                  - Other liquids tankers
+                  - Van < 3.5 t GVW
+                  - Artic truck up to 44 t GVW (Container)
+                  - Artic truck up to 60 t GVW (Container)
+                  - Rigid truck 3.5–7.5 t GVW
+      - name: SEA_SIZE
+        data_tests:
+          - accepted_values:
+              arguments: 
+                values: 
+                  - 0-1999
+                  - 0-4999
+                  - 0-999
+                  - 1000-+
+                  - 10000-+
+                  - 10000-19999
+                  - 120000-199999
+                  - 2000-4999
+                  - 2000-5999
+                  - 20000-+
+                  - 20000-39999
+                  - 20000-59999
+                  - 200000-+
+                  - 40000-+
+                  - 5000-9999
+                  - 6000-9999
+                  - 60000-79999
+                  - 80000-119999
+                  - null
+      - name: SEA_FUEL_TYPE
+        data_tests: 
+          - accepted_values: 
+              arguments: 
+                values: ["HFO", "MDO" , "VLSFO", "Diesel"]
+      - name: WTW_CO2_G_T_KM
+        data_tests: 
+          - not_null
+      - name: TTW_CO2_G_T_KM
+        data_tests: 
+          - not_null
+  - name: stg_DEV_SEEDS__DIM_TRANSPORT_FUEL 
+    columns:
+      - name: TRANSPORT_MODE
+        data_tests:
+          - accepted_values:
+              arguments: 
+                values: ['AIR', 'SEA', 'RAIL']
+      - name: VIHECLE_TYPE
+        data_tests: 
+          - accepted_values: 
+              arguments: 
+                values: 
+                  - Average/mixed 
+                  - BELLY FREIGHT 
+                  - Building Materials 
+                  - Cars 
+                  - Cereals 
+                  - Chemical tanker 
+                  - Chemicals 
+                  - Coal & Steel 
+                  - Container 
+                  - FREIGHTER 
+                  - General cargo 
+                  - Liquefied gas tanker 
+                  - Manufactured Products 
+                  - Oil tanker 
+                  - Other liquids tankers 
+                  - Refrigerated bulk 
+                  - Trailer only on train 
+                  - Truck + trailer on train 
+      - name: FUEL_L_T_KM 
+        data_tests:
+          - not_null
+  - name: stg_DEV_SEEDS__FCT_FUEL_PRICES 
+    columns: 
+      - name: DATE 
+        data_tests: 
+          - not_null
+      - name: FUEL_TYPE
+        data_tests: 
+          - accepted_values: 
+              arguments: 
+                values:
+                  - MDO
+                  - HFO
+                  - Jet_Fuel
+                  - VLSFO
+                  - Diesel
+      - name: FUEL_PRICE_USD_PER_L
+        data_tests:
+          - not_null
+  - name: stg_DEV_SEEDS__DIM_CARBON_TAX_RATES
+    columns:
+      - name: COUNTRY_CD_2CHAR
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ["AE", "BE", "CN", "DE", "FR", "KR", "NL", "SG", "US"]
+      - name: COUNTRY_CD_3CHAR
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ["ARE", "BEL", "CHN", "DEU", "FRA", "KOR", "NLD", "SGP", "USA"]
+      - name: CARBON_TAX_RATE_USD_PER_TCO2
+        data_tests:
+          - not_null
+  - name: stg_RAW__GLOBAL_SUPPLY_CHAIN_RISK_2024_2026
+    columns: 
+      - name: SHIPMENT_ID
+        data_tests:
+          - not_null
+      - name: DATE
+        data_tests:
+          - not_null
+      - name: ORIGIN_PORT
+        data_tests:
+          - not_null
+      - name: DESTINATION_PORT
+        data_tests:
+          - not_null
+      - name: TRANSPORT_MODE
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['Air', 'Sea', 'Rail', 'Road']
+      - name: PRODUCT_CATEGORY
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: 
+                  - Perishables
+                  - Electronics
+                  - Pharmaceuticals
+                  - Textiles
+                  - Automotive
+      - name: DISTANCE_KM 
+        data_tests: 
+          - not_null
+      - name: WEIGHT_MT 
+        data_tests: 
+          - not_null
+      - name: FUEL_PRICE_INDEX
+        data_tests:
+          - not_null
+      - name: GEOGRAPHICAL_RISK_SCORE
+        data_tests:
+          - not_null
+      - name: WEATHER_CONDITION 
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: 
+                  - Rain
+                  - Storm
+                  - Fog
+                  - Hurricane
+                  - Clear
+      - name: CARRIER_RELIABILITY_SCORE
+        data_tests:
+          - not_null
+      - name: LEAD_TIME_DAYS
+        data_tests:
+          - not_null
+      - name: DISRUPTION_OCCURRED
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [0, 1]
+                quote: False
