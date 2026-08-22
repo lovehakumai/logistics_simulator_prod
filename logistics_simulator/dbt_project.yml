@@ -1,7 +1,7 @@
-name: 'logistics_simulator'
+name: 'logistics_simulator_v2'
 version: '1.0.0'
 
-profile: 'logistics_simulator'
+profile: 'snowflake_trial_20260822'
 
 model-paths: ["models"]
 analysis-paths: ["analyses"]
@@ -15,7 +15,7 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 models:
-  logistics_simulator:
+  logistics_simulator_v2:
     staging:
       +materialized: view
       +schema: STAGING
