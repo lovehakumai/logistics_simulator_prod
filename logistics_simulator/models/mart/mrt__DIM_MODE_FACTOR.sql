@@ -11,7 +11,7 @@ WITH seeds_co2_emission AS (
         END AS FUEL_TYPE
         , WTW_CO2_G_T_KM
         , TTW_CO2_G_T_KM 
-    FROM {{ref('stg_DEV_SEEDS__CO2_EMISSION')}}
+    FROM {{ref('stg_SEEDS__CO2_EMISSION')}}
 )
 , seeds_transport_fuel AS (
     SELECT
@@ -25,7 +25,7 @@ WITH seeds_co2_emission AS (
             ELSE SEA_FUEL_TYPE 
         END AS FUEL_TYPE
         , FUEL_L_T_KM
-    FROM {{ref('stg_DEV_SEEDS__DIM_TRANSPORT_FUEL')}}
+    FROM {{ref('stg_SEEDS__DIM_TRANSPORT_FUEL')}}
 )
 , merge_result AS (
     SELECT

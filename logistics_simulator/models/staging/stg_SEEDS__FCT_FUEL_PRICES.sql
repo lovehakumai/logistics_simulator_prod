@@ -1,5 +1,5 @@
 with source as (
-        select * from {{ source('DEV_SEEDS', 'FCT_FUEL_PRICES') }}
+        select * from {{ source('RAW', 'FCT_FUEL_PRICES') }}
   ),
   renamed as (
       select

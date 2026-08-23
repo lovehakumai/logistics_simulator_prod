@@ -28,7 +28,7 @@ WITH base AS (
         , PORT_NAME_EN	
         , LATITUDE	
         , LONGITUDE
-    FROM {{ref('stg_DEV_SEEDS__MAIN_PORTS')}}
+    FROM {{ref('stg_SEEDS__MAIN_PORTS')}}
 )
 , base_with_port AS(
     SELECT 
@@ -70,5 +70,4 @@ WITH base AS (
     ON base.DESTINATION_PORT = DESTINATION.BASE_POINT
         AND base.TRANSPORT_MODE = DESTINATION.TRANSPORT_MODE
 )
-{# SELECT * FROM base_with_port #}
-SELECT DISTINCT WEATHER_CONDITION FROM base_with_port
+SELECT * FROM base_with_port

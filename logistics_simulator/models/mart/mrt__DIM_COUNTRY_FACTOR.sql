@@ -1,7 +1,7 @@
-WITH seeds_main_ports AS (SELECT * FROM {{ref('stg_DEV_SEEDS__MAIN_PORTS')}})
-, seeds_carbon_tax AS (SELECT * FROM {{ref('stg_DEV_SEEDS__DIM_CARBON_TAX_RATES')}})
-, seeds_transport_fuel AS (SELECT * FROM {{ref('stg_DEV_SEEDS__DIM_TRANSPORT_FUEL')}})
-, seeds_co2_emission AS (SELECT * FROM {{ref('stg_DEV_SEEDS__CO2_EMISSION')}})
+WITH seeds_main_ports AS (SELECT * FROM {{ref('stg_SEEDS__MAIN_PORTS')}})
+, seeds_carbon_tax AS (SELECT * FROM {{ref('stg_SEEDS__DIM_CARBON_TAX_RATES')}})
+, seeds_transport_fuel AS (SELECT * FROM {{ref('stg_SEEDS__DIM_TRANSPORT_FUEL')}})
+, seeds_co2_emission AS (SELECT * FROM {{ref('stg_SEEDS__CO2_EMISSION')}})
 , seeds_thc AS (
     SELECT
         mp.COUNTRY_CD_2CHAR	

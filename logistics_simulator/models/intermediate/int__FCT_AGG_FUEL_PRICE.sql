@@ -1,5 +1,5 @@
 WITH base AS (
-    SELECT * FROM {{ref('stg_DEV_SEEDS__FCT_FUEL_PRICES')}}
+    SELECT * FROM {{ref('stg_SEEDS__FCT_FUEL_PRICES')}}
 )
 , latest_3_month AS (
     SELECT

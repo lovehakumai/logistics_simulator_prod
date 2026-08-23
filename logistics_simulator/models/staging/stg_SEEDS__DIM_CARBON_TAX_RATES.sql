@@ -1,5 +1,5 @@
 with source as (
-        select * from {{ source('DEV_SEEDS', 'DIM_CARBON_TAX_RATES') }}
+        select * from {{ source('RAW', 'DIM_CARBON_TAX_RATES') }}
   ),
   renamed as (
       select

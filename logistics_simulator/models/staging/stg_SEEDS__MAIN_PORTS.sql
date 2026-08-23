@@ -1,5 +1,5 @@
 with source as (
-        select * from {{ source('DEV_SEEDS', 'MAIN_PORTS') }}
+        select * from {{ source('RAW', 'MAIN_PORTS') }}
   ),
   renamed as (
       select

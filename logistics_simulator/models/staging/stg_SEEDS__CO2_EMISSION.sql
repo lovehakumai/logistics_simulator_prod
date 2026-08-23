@@ -1,5 +1,5 @@
 with source as (
-        select * from {{ source('DEV_SEEDS', 'DIM_TRANSPORT_FUEL') }}
+        select * from {{ source('RAW', 'CO2_EMISSION') }}
   ),
   renamed as (
       select
@@ -8,7 +8,8 @@ with source as (
         {{ adapter.quote("AIR_DISTANCE") }},
         {{ adapter.quote("SEA_SIZE") }},
         {{ adapter.quote("SEA_FUEL_TYPE") }},
-        {{ adapter.quote("FUEL_L_T_KM") }}
+        {{ adapter.quote("WTW_CO2_G_T_KM") }},
+        {{ adapter.quote("TTW_CO2_G_T_KM") }}
 
       from source
   )
