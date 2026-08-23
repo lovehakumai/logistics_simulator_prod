@@ -4,23 +4,24 @@ import pandas as pd
 
 # Download latest version
 def main():
-    zip_file_path  ="get_data/global-supply-chain-risk-and-logistics-2024-2026.zip"
-    csv_file_path  ="get_data/global-supply-chain-risk-and-logistics-2024-2026.csv"
+    csv_file_path = "get_data/csv/global-supply-chain-risk-and-logistics-2024-2026.csv"
+    kaggle_zip_dl_path  ="nudratabbas/global-supply-chain-risk-and-logistics-2024-2026"
 
-    if not os.path.exists(zip_file_path):
-        path = kagglehub.dataset_download(
-            "nudratabbas/global-supply-chain-risk-and-logistics-2024-2026",
-            output_dir = zip_file_path 
-            )
-        print("Path to dataset files:", path)
-    else:
-        print("Zip file already exists.")
+    print("Downloading dataset...")
+    # kaggle_hub.dataset_download : 
+    dataset_path = kagglehub.dataset_download(kaggle_zip_dl_path)
+    print("Path to dataset files: ", dataset_path)
 
-        with zipfile.ZipFile(zip_file_path, "r") as z:
-            csv_filename = [f for f in z.namelist() if f.ends_with(".csv")][0]
-            with z.open(csv_filename) as f:
-                df = pd.read_csv(f)
-        df.to_csv(csv_file_path, index=False)
+    csv_files = [f for f in os.listdir(dataset_path) if f.endswith(".csv")]
+
+    if not csv_files:
+        print("CSV file not found in the dataset.")
+        return 
+
+    source_csv = os.path.join(dataset_path, csv_files[0])
+    df = pd.read_csv(source_csv)
+    df.to_csv(csv_file_path, index=False)
+    print(f"Dataset successfully saved to {csv_file_path}")
 
 if __name__ == "__main__":
-    main()
+    main() 
