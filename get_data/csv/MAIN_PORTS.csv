@@ -1,0 +1,37 @@
+ID,COUNTRY_CD_2CHAR,COUNTRY_CD_3CHAR,COUNTRY_NAME,BASE_POINT,TRANSPORT_MODE,PORT_NAME_JP,PORT_NAME_EN,LATITUDE,LONGITUDE,COST_TYPE,COST_PER_KM_WT,COST_PER_CONTAINER,MINIMUM_CHARGE
+KR_BUSAN_AIR_1,KR,KOR,KOREA,BUSAN,AIR,金海国際空港,Gimhae International Airport - PUS,35.1795,128.9382,Air Terminal Handling Fee,0.3,0,35
+KR_BUSAN_SEA_1,KR,KOR,KOREA,BUSAN,SEA,釜山港,Port of Busan,35.1044,129.0435,Terminal Handling Charge,0,111,0
+KR_BUSAN_RAIL_1,KR,KOR,KOREA,BUSAN,RAIL,釜山新港駅,Busan New Port Station,35.1011,128.8821,Railway Container Lift Fee,0,37,0
+KR_BUSAN_ROAD_1,KR,KOR,KOREA,BUSAN,ROAD,梁山インランドコンテナデポ,Yangshan Inland Container Depot (Yangsan ICD),35.3223,129.0061,Truck Depot LO-LO Fee,0,26,0
+FR_MARSEILLE_AIR_1,FR,FRA,FRANCE,MARSEILLE,AIR,マルセイユ・プロヴァンス空港,Marseille Provence Airport - MRS,43.4355,5.2136,Air Terminal Handling Fee,0.35,0,45
+FR_MARSEILLE_SEA_1,FR,FRA,FRANCE,MARSEILLE,SEA,マルセイユ・フォス港,Marseille Fos Port,43.4344,4.8872,Terminal Handling Charge,0,240,0
+FR_MARSEILLE_RAIL_1,FR,FRA,FRANCE,MARSEILLE,RAIL,ミラマ操車場,Miramas Yard,43.5843,5.0012,Railway Container Lift Fee,0,43,0
+FR_MARSEILLE_ROAD_1,FR,FRA,FRANCE,MARSEILLE,ROAD,クレシュド陸送デポ（ミラマ）,Clésud Logistics Park (Miramas),43.6096,5.0056,Truck Depot LO-LO Fee,0,42,0
+NL_ROTTERDAM_AIR_1,NL,NLD,NETHERLANDS,ROTTERDAM,AIR,ロッテルダム・ザ・ハーグ空港,Rotterdam The Hague Airport - RTM,51.9569,4.4372,Air Terminal Handling Fee,0.25,0,55
+NL_ROTTERDAM_SEA_1,NL,NLD,NETHERLANDS,ROTTERDAM,SEA,ロッテルダム港,Port of Rotterdam,51.885,4.2867,Terminal Handling Charge,0,270,0
+NL_ROTTERDAM_RAIL_1,NL,NLD,NETHERLANDS,ROTTERDAM,RAIL,キフフーク操車場,Kijfhoek Marshalling Yard,51.8267,4.5975,Railway Container Lift Fee,0,49,0
+NL_ROTTERDAM_ROAD_1,NL,NLD,NETHERLANDS,ROTTERDAM,ROAD,ワールハーフェン・トラックデポ,Waalhaven Truck Depot,51.8864,4.4278,Truck Depot LO-LO Fee,0,45,0
+CN_SHANGHAI_AIR_1,CN,CHN,CHINA,SHANGHAI,AIR,上海浦東国際空港,Shanghai Pudong International Airport - PVG,31.1443,121.8083,Air Terminal Handling Fee,0.35,0,40
+CN_SHANGHAI_SEA_1,CN,CHN,CHINA,SHANGHAI,SEA,上海港 / 洋山深水港,Yangshan Deep Water Port,30.6264,122.0645,Terminal Handling Charge,0,110,0
+CN_SHANGHAI_RAIL_1,CN,CHN,CHINA,SHANGHAI,RAIL,芦潮港駅,Luchaogang Station,30.8719,121.8415,Railway Container Lift Fee,0,35,0
+CN_SHANGHAI_ROAD_1,CN,CHN,CHINA,SHANGHAI,ROAD,臨港物流園区デポ（洋山ICD）,Lingang Logistics Park Depot (Yangshan ICD),30.908,121.89,Truck Depot LO-LO Fee,0,25,0
+AE_DUBAI_AIR_1,AE,ARE,UAE,DUBAI,AIR,アル・マクトゥーム国際空港,Al Maktoum International Airport - DWC,24.8962,55.1613,Air Terminal Handling Fee,0.32,0,50
+AE_DUBAI_SEA_1,AE,ARE,UAE,DUBAI,SEA,ジェベル・アリ港,Port of Jebel Ali,24.9856,55.0682,Terminal Handling Charge,0,150,0
+AE_DUBAI_RAIL_1,AE,ARE,UAE,DUBAI,RAIL,エティハド鉄道 ドバイ貨物ターミナル,Etihad Rail Freight Terminal,24.96,55.08,Railway Container Lift Fee,0,50,0
+AE_DUBAI_ROAD_1,AE,ARE,UAE,DUBAI,ROAD,ジェベル・アリ・フリーゾーン・デポ,Jebel Ali Free Zone Depot (JAFZA),24.9922,55.0894,Truck Depot LO-LO Fee,0,40,0
+US_LOS ANGELES_AIR_1,US,USA,USA,LOS ANGELES,AIR,ロサンゼルス国際空港,Los Angeles International Airport - LAX,33.9416,-118.4085,Air Terminal Handling Fee,0.45,0,50
+US_LOS ANGELES_SEA_1,US,USA,USA,LOS ANGELES,SEA,ロサンゼルス港,Port of Los Angeles,33.7431,-118.2673,Terminal Handling Charge,0,350,0
+US_LOS ANGELES_RAIL_1,US,USA,USA,LOS ANGELES,RAIL,ホバート操車場,BNSF Hobart Yard,34.0117,-118.1969,Railway Container Lift Fee,0,80,0
+US_LOS ANGELES_ROAD_1,US,USA,USA,LOS ANGELES,ROAD,サンペドロ湾オフドックデポ,San Pedro Bay Off-Dock Depot,33.785,-118.23,Truck Depot LO-LO Fee,0,65,0
+SG_SINGAPORE_AIR_1,SG,SGP,SINGAPORE,SINGAPORE,AIR,シンガポール・チャンギ国際空港,Singapore Changi Airport - SIN,1.3644,103.9915,Air Terminal Handling Fee,0.35,0,45
+SG_SINGAPORE_SEA_1,SG,SGP,SINGAPORE,SINGAPORE,SEA,シンガポール港 / トゥアス港,Tuas Port,1.223,103.6231,Terminal Handling Charge,0,180,0
+SG_SINGAPORE_RAIL_1,SG,SGP,SINGAPORE,SINGAPORE,RAIL,ウッドランズ・トレイン・チェックポイント,Woodlands Train Checkpoint,1.4428,103.7686,Railway Container Lift Fee,0,95,0
+SG_SINGAPORE_ROAD_1,SG,SGP,SINGAPORE,SINGAPORE,ROAD,ケッペル・ディストリパーク,Keppel Distripark,1.2721,103.834,Truck Depot LO-LO Fee,0,35,0
+BE_ANTWERP_AIR_1,BE,BEL,BELGIUM,ANTWERP,AIR,アントワープ国際空港,Antwerp International Airport - ANR,51.1894,4.4603,Air Terminal Handling Fee,0.28,0,45
+BE_ANTWERP_SEA_1,BE,BEL,BELGIUM,ANTWERP,SEA,アントワープ・ブルージュ港,Port of Antwerp-Bruges,51.2411,4.38,Terminal Handling Charge,0,250,0
+BE_ANTWERP_RAIL_1,BE,BEL,BELGIUM,ANTWERP,RAIL,アントワープ北操車場,Antwerpen-Noord Marshalling Yard,51.2783,4.3167,Railway Container Lift Fee,0,45,0
+BE_ANTWERP_ROAD_1,BE,BEL,BELGIUM,ANTWERP,ROAD,アントワープ・コンテナデポ,Antwerp Container Depot,51.24,4.34,Truck Depot LO-LO Fee,0,38,0
+DE_HAMBURG_AIR_1,DE,DEU,GERMANY,HAMBURG,AIR,ハンブルク空港,Hamburg Airport - HAM,53.6304,9.9882,Air Terminal Handling Fee,0.4,0,50
+DE_HAMBURG_SEA_1,DE,DEU,GERMANY,HAMBURG,SEA,ハンブルク港,Port of Hamburg,53.5244,9.9635,Terminal Handling Charge,0,288,0
+DE_HAMBURG_RAIL_1,DE,DEU,GERMANY,HAMBURG,RAIL,マッシェン操車場,Maschen Marshalling Yard,53.4,10.05,Railway Container Lift Fee,0,49,0
+DE_HAMBURG_ROAD_1,DE,DEU,GERMANY,HAMBURG,ROAD,ビルブルック・コンテナデポ,Billbrook Container Depot,53.53,10.09,Truck Depot LO-LO Fee,0,43,0
